@@ -18,4 +18,17 @@ export const menuItems: IMenuItem[] = [
     url: "/",
     show: true,
   },
+  {
+    key: "1",
+    label: trans("sidebar.1"),
+    icon: <i className="fa-solid fa-gauge-low" />,
+    url: "/",
+    show: true,
+  }, {
+    key: "2",
+    label: trans("sidebar.2"),
+    icon: <i className="fa-solid fa-gauge-low" />,
+    url: "/",
+    show: true,
+  },
 ]

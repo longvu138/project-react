@@ -52,41 +52,41 @@ export const SideBar: React.FC<Props> = ({ collapsed, onCollapsed }) => {
           onMouseLeave={() => {
             if (collapsed) setIsHover(false)
           }}
+          theme="light"
           collapsed={!isOpenSidebar}
           onCollapse={onCollapsed}
           collapsedWidth={56}
           css={slidebarCss}
-          className={`sidebar min-h-screen [box-shadow:0_8px_16px_rgba(0,_0,_0,_0.07)] fixed top-[0] overflow-y-auto border-r-[1px_solid_#f0f0f0] !max-w-[unset] bg-[#fff] ${
-            !isOpenSidebar ? "sidebar--collapse !w-[24px]" : "sidebar--expand !w-[280px]"
-          }`}
+          className={`sidebar min-h-screen [box-shadow:0_8px_16px_rgba(0,_0,_0,_0.07)] fixed top-[0] overflow-y-auto border-r-[1px_solid_#f0f0f0] !max-w-[unset] bg-[#fff] ${!isOpenSidebar ? "sidebar--collapse !w-[24px]" : "sidebar--expand !w-[280px]"
+            }`}
           trigger={null}>
-          {/* <div className={`sidebar__trigger-top ${xs ? "closable" : ""}`}>
+          <div className={`sidebar__trigger-top ${xs ? "closable" : ""}`}>
             {!isOpenSidebar ? (
               <>
                 <img
-                  src={minilogo}
-                  alt={"Vela One"}
+                  // src={minilogo}
+                  alt={"logo"}
                   className="object-contain w-[32px] h-[32px]"
                 />
               </>
             ) : (
               <>
                 <img
-                  src={logo}
-                  alt={"Vela One"}
+                  // src={logo}
+                  alt={"logo"}
                   className="max-w-[170px] p-[12px] object-contain"
                 />
               </>
             )}
-          </div> */}
-          {/* <Menu
+          </div>
+          <Menu
             className="sidebar__menu menu__scrollbar"
             defaultOpenKeys={[]}
             mode="inline"
             selectedKeys={selectedKeys}
             onClick={handleSelectMenuItem}
             items={filteredMenuItems}
-          /> */}
+          />
         </Sider>
       )}
     </>

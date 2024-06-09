@@ -30,10 +30,10 @@ export const DefaultLayout = (props: Props) => {
   return (
     <App>
       <Layout className="main-layout">
-        {/* <SideBar
+        <SideBar
           collapsed={collapsed}
           onCollapsed={onCollapsed}
-        /> */}
+        />
         <Layout>
           <Header
             collapsed={collapsed}
