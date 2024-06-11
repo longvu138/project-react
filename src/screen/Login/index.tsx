@@ -15,6 +15,9 @@ type FieldType = {
 export const Login = () => {
 	const [loading, setLoading] = useState(false)
 	console.log("log lần 1");
+	console.log("log lần 2");
+	console.log("log lần 3");
+	console.log("log lần 4");
 	
 	const onFinish = (values: any) => {
 		setLoading(true)
