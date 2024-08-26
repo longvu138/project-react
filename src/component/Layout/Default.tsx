@@ -46,11 +46,11 @@ export const DefaultLayout = (props: Props) => {
               <Spin
                 tip={trans("message.loading")}
                 spinning={props.loading}>
-                <div className="p-6">{props.children}</div>
+                <div className="p-4 m-6 bg-white rounded-lg">{props.children}</div>
               </Spin>
             </div>
           </Content>
-         
+
         </Layout>
       </Layout>
     </App>

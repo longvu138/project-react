@@ -18,14 +18,14 @@ export const Dashboard = (props: any) => {
     changePageTitle(trans("Peach"))
   }, [changePageTitle])
 
-  useEffect(() => {
-    const callApi = () => {
-      defaultApiClient.get('/profile').then((res) => {
-        localStore.setJson('loggedUser', res.data)
-      }).catch((err) => console.log(err));
-    }
-    callApi()
-  }, [])
+  // useEffect(() => {
+  //   const callApi = () => {
+  //     defaultApiClient.get('/profile').then((res) => {
+  //       localStore.setJson('loggedUser', res.data)
+  //     }).catch((err) => console.log(err));
+  //   }
+  //   callApi()
+  // }, [])
 
   return (
     <DefaultLayout

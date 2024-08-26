@@ -20,9 +20,9 @@ export const menuItems: IMenuItem[] = [
   },
   {
     key: "1",
-    label: trans("sidebar.1"),
+    label: trans("sidebar.config_permission"),
     icon: <i className="fa-solid fa-gauge-low" />,
-    url: "/",
+    url: "/config_permission",
     show: true,
   }, {
     key: "2",

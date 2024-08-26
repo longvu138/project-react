@@ -5,7 +5,7 @@ import { get } from "lodash"
 
 const defaultApiClient = apiClient({
   baseURL: appConfig.apiUrl,
-  bearerToken: get(localStore.getJson("loginSession"), "accessToken"),
+  bearerToken: get(localStore.getJson("loginSession"), "token"),
 })
 
 const ApiClientNoToken = apiClient({

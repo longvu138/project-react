@@ -11,6 +11,7 @@ interface Props {
 }
 
 export const AuthenticateRoute = (props: Props) => {
+  console.log('!SecurityService.isLogged()', !SecurityService.isLogged());
   
   if (!SecurityService.isLogged()) {
     return <Navigate to={"/login"} />

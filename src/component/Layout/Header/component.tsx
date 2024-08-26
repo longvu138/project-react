@@ -40,7 +40,6 @@ export const Header: React.FC<Props> = (props) => {
   const { id } = useParams()
   const navigate = useNavigate()
   const userInfo = SecurityService.getUser()
-  console.log(userInfo.data.name);
 
   const handleChangeLang = (lang: string) => {
     localStore.setItem("language", lang)
@@ -138,7 +137,7 @@ export const Header: React.FC<Props> = (props) => {
               <Typography.Text
                 strong
                 className="mr-2">
-                Xin chào: {userInfo?.data?.name}
+                Xin chào: {userInfo?.username}
               </Typography.Text>
               <Popover
                 placement="bottomRight"
